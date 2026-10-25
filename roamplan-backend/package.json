@@ -1,0 +1,24 @@
+{
+  "name": "roamplan-backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Backend Express.js + SQLite untuk RoamPlan - Smart Trip Planner",
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning src/server.js",
+    "dev": "node --watch --disable-warning=ExperimentalWarning src/server.js",
+    "test": "node --test --disable-warning=ExperimentalWarning 'tests/**/*.test.js'",
+    "test:coverage": "node --test --experimental-test-coverage --disable-warning=ExperimentalWarning 'tests/**/*.test.js'"
+  },
+  "dependencies": {
+    "@libsql/client": "^0.18.0",
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2"
+  },
+  "engines": {
+    "node": ">=22.13"
+  }
+}
